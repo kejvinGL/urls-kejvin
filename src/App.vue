@@ -3,7 +3,6 @@ import axios from "axios";
 import SiteNavigation from "./components/SiteNavigation.vue";
 import createUrl from "./components/createUrl.vue";
 import urlTable from "./components/urlTable.vue";
-import Redirect from "./components/Redirect.vue";
 
 export default {
   name: "App",
@@ -11,7 +10,6 @@ export default {
     createUrl,
     urlTable,
     SiteNavigation,
-    Redirect,
   },
 };
 </script>
