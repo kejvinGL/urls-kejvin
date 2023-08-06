@@ -11,7 +11,7 @@ const router = createRouter({
     },
     {
       path: '/:code',
-      redirect: 'https://urls-kejvin-server-f69fa1281575.herokuapp.com/:code'
+      beforeEnter() { location.href = 'http://github.com' }
     }
 
   ]
