@@ -5,13 +5,11 @@
 <script>
 export default {
   beforeRouteEnter(to, from, next) {
-    const code = to.params.code; // Get the code from the route parameter
-    const externalURL = `https://urls-kejvin-server-f69fa1281575.herokuapp.com/${code}`; // Replace "example.com" with the actual base external URL
+    const code = to.params.code;
+    const redirectTo = `https://urls-kejvin-server-f69fa1281575.herokuapp.com/${code}`;
 
-    // Redirect the user to the external URL
-    window.location.href = externalURL;
+    window.location.replace(redirectTo);
 
-    // Since this is a redirect, there's no need to render the component
     next(false);
   },
 };
