@@ -9,6 +9,10 @@ const router = createRouter({
       name: 'home',
       component: SiteView
     },
+    {
+      path: '/:code',
+      redirect: 'https://urls-kejvin-server-f69fa1281575.herokuapp.com/:code'
+    }
 
   ]
 })
