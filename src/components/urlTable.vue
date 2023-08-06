@@ -17,7 +17,9 @@ export default {
     },
     async deleteUrl(urlCode) {
       const response = await axios
-        .delete(`urls-kejvin-server-f69fa1281575.herokuapp.com/${urlCode}`)
+        .delete(
+          `https://urls-kejvin-server-f69fa1281575.herokuapp.com/${urlCode}`
+        )
         .then((response) => {
           this.getUrls();
         });
