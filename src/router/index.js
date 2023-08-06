@@ -11,12 +11,11 @@ const router = createRouter({
       name: 'home',
       component: SiteView
     },
+
     {
-      path: "/:code",
-      redirect: (to) => {
-        const redirectTo = `https://urls-kejvin-server-f69fa1281575.herokuapp.com/${to.params.code}`;
-        return redirectTo;
-      },
+      path: '/:code', // Use a named route and include the dynamic parameter ":code"
+      name: 'redirect',
+      component: Redirect,
     },
   ]
 })
