@@ -16,9 +16,6 @@ export default {
 <template>
   <div class="flex flex-col min-h-screen font-Roboto bg-urlS-primary">
     <RouterView />
-    <SiteNavigation />
-    <createUrl />
-    <urlTable />
   </div>
 </template>
 <style lang="scss" scoped></style>
