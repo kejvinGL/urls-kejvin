@@ -10,7 +10,7 @@ export default {
   methods: {
     async shorten() {
       const response = await axios.post(
-        "https://urls-kejvin-server-f69fa1281575.herokuapp.com/api/url/shorten",
+        "urls-kejvin-server-f69fa1281575.herokuapp.com/api/url/shorten",
         {
           longUrl: this.longUrl,
         }

@@ -11,7 +11,7 @@ export default {
     async getUrls() {
       const response = await axios
         .get(
-          "http://https://urls-kejvin-server-f69fa1281575.herokuapp.com/:5000/api/url/"
+          "https://urls-kejvin-server-f69fa1281575.herokuapp.com/:5000/api/url/"
         )
         .then((response) => {
           this.urls = response.data;
@@ -20,7 +20,7 @@ export default {
     async deleteUrl(urlCode) {
       const response = await axios
         .delete(
-          `https://urls-kejvin-server-f69fa1281575.herokuapp.com/:5000/${urlCode}`
+          `urls-kejvin-server-f69fa1281575.herokuapp.com/:5000/${urlCode}`
         )
         .then((response) => {
           this.getUrls();
