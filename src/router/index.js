@@ -12,11 +12,10 @@ const router = createRouter({
     },
 
     {
-      path: '/:code',
-      beforeEnter(to, from, next) {
-        window.location.replace("https://urls-kejvin-server-f69fa1281575.herokuapp.com/")
-      },
-    }
+      path: '/:code', // Use a named route and include the dynamic parameter ":code"
+      name: 'redirect',
+      component: Redirect,
+    },
   ]
 })
 
