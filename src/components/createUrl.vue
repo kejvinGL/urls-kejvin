@@ -9,12 +9,9 @@ export default {
   },
   methods: {
     async shorten() {
-      const response = await axios.post(
-        "urls-kejvin-server-f69fa1281575.herokuapp.com/api/url/shorten",
-        {
-          longUrl: this.longUrl,
-        }
-      );
+      const response = await axios.post("/api/url/shorten", {
+        longUrl: this.longUrl,
+      });
       window.location.reload();
     },
   },
