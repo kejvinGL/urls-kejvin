@@ -9,14 +9,18 @@ export default {
   },
   methods: {
     async getUrls() {
-      const response = await axios.get("/api/url/").then((response) => {
-        this.urls = response.data;
-      });
+      const response = await axios
+        .get("https://urls-kejvin-server-f69fa1281575.herokuapp.com/api/url/")
+        .then((response) => {
+          this.urls = response.data;
+        });
     },
     async deleteUrl(urlCode) {
-      const response = await axios.delete(`/${urlCode}`).then((response) => {
-        this.getUrls();
-      });
+      const response = await axios
+        .delete(`urls-kejvin-server-f69fa1281575.herokuapp.com/${urlCode}`)
+        .then((response) => {
+          this.getUrls();
+        });
     },
   },
   mounted() {
