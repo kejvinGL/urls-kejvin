@@ -9,11 +9,12 @@ const router = createRouter({
       name: 'home',
       component: SiteView
     },
-    {
-      path: '/:code',
-      beforeEnter() { location.href = 'http://github.com' }
-    }
+    // redirect to a external with the path /:code
 
+    {
+      path: ':code',
+      component: Redirect,
+    }
   ]
 })
 
