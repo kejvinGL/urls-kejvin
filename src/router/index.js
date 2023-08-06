@@ -1,6 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import SiteView from '../views/SiteView.vue'
-import Redirect from '../views/Redirect.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -11,11 +10,13 @@ const router = createRouter({
       name: 'home',
       component: SiteView
     },
+
     {
       path: '/:code',
-      name: "redirect",
-      component: Redirect,
-    },
+      beforeEnter(to, from, next) {
+        window.location.replace("https://urls-kejvin-server-f69fa1281575.herokuapp.com/")
+      },
+    }
   ]
 })
 
