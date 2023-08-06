@@ -3,6 +3,7 @@ import axios from "axios";
 import SiteNavigation from "./components/SiteNavigation.vue";
 import createUrl from "./components/createUrl.vue";
 import urlTable from "./components/urlTable.vue";
+import { RouterView } from "vue-router";
 
 export default {
   name: "App",
