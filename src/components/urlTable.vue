@@ -10,14 +10,18 @@ export default {
   methods: {
     async getUrls() {
       const response = await axios
-        .get("http://localhost:5000/api/url/")
+        .get(
+          "http://https://urls-kejvin-server-f69fa1281575.herokuapp.com/:5000/api/url/"
+        )
         .then((response) => {
           this.urls = response.data;
         });
     },
     async deleteUrl(urlCode) {
       const response = await axios
-        .delete(`http://localhost:5000/${urlCode}`)
+        .delete(
+          `https://urls-kejvin-server-f69fa1281575.herokuapp.com/:5000/${urlCode}`
+        )
         .then((response) => {
           this.getUrls();
         });
