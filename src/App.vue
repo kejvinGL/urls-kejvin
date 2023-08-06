@@ -2,7 +2,7 @@
 import axios from "axios";
 import SiteNavigation from "./components/SiteNavigation.vue";
 import createUrl from "./components/createUrl.vue";
-import urlTable from "./components/urltable.vue";
+import urlTable from "./components/urlTable.vue";
 
 export default {
   name: "App",
