@@ -9,10 +9,9 @@ const router = createRouter({
       name: 'home',
       component: SiteView
     },
-    // redirect to a external with the path /:code
 
     {
-      path: ':code',
+      path: '/:code',
       component: Redirect,
     }
   ]
