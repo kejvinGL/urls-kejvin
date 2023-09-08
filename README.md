@@ -1,7 +1,10 @@
-# Vue 3 + Vite
+# Simple Url Shortener
+This website allow you to create shorter urls of a website of your choosing.
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+# Usage
+Insert the long URL which you want to shorten, then click the plus (+) symbol
+The website with show up on the list along with the shortened version. 
 
-## Recommended IDE Setup
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+# Removing an URL
+You can delete the shortened versions by clicking the trashcan symbol. 
