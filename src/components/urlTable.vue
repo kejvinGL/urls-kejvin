@@ -10,16 +10,14 @@ export default {
   methods: {
     async getUrls() {
       const response = await axios
-        .get("https://urls-kejvin-server-f69fa1281575.herokuapp.com/api/url/")
+        .get("https://urls-kejvin-server.onrender.com/api/url/")
         .then((response) => {
           this.urls = response.data;
         });
     },
     async deleteUrl(urlCode) {
       const response = await axios
-        .delete(
-          `https://urls-kejvin-server-f69fa1281575.herokuapp.com/${urlCode}`
-        )
+        .delete(`https://urls-kejvin-server.onrender.com/${urlCode}`)
         .then((response) => {
           this.getUrls();
         });

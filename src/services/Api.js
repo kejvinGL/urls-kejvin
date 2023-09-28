@@ -1,8 +1,7 @@
-import axios from 'axios'
+import axios from "axios";
 
 export default () => {
-    return axios.create({
-        baseURL: `urls-kejvin-server-f69fa1281575.herokuapp.com`
-
-    })
-}
+  return axios.create({
+    baseURL: `urls-kejvin.onrender.com`,
+  });
+};
